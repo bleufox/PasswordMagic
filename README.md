@@ -7,6 +7,8 @@ This application will generate a random password based criteria specified by the
 4.) Would you like to include numbers?
 5.) Would you like to include special characters?
 
+Upon gathering user input, the application will generate a random password based on the input criteria.
+
 # Screenshot of Application
 The following image shows the web applicagtions appearance and functionality:
 ![Screenshot](images/Screenshot.png)
