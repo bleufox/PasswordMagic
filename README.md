@@ -14,5 +14,4 @@ The following image shows the web applicagtions appearance and functionality:
 ![Screenshot](images/Screenshot.png)
 
 # Web Address
-
 [Password Magic Password Generator](https://bleufox.github.io/PasswordMagic/)

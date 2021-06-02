@@ -25,18 +25,17 @@ let passwordLength = function () {
 
   if (passwordLengthPrompt < 8 || passwordLengthPrompt > 128 || passwordLengthPrompt === "") {
     alert("You did not enter a number between 8 and 128. Please try again.")
-    return passwordLength;
+    return;
   }
-  
+
   passwordLengthPrompt = Math.floor(Number(passwordLengthPrompt));
 
   return passwordLengthPrompt;
-  
 }
 
 let newPassword = function () {
 
-let inputLength = "";
+  let inputLength = "";
 
   const uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   const lowercaseLetters = 'abcdefghijklmnopqrstuvwxyz'
@@ -52,34 +51,34 @@ let inputLength = "";
   const numbersConfirm = confirm("Would you like to include numbers?");
   console.log(numbersConfirm);
 
-  const specialCharsConfirm = confirm("Would you like to include special charactersrs?");
+  const specialCharsConfirm = confirm("Would you like to include special characters?");
   console.log(specialCharsConfirm);
 
-  if(uppercaseConfirm === true) {
+  if (uppercaseConfirm === true) {
     inputLength += uppercaseLetters;
   }
 
-  if(lowercaseConfirm === true) {
+  if (lowercaseConfirm === true) {
     inputLength += lowercaseLetters;
   }
 
-  if(numbersConfirm === true) {
+  if (numbersConfirm === true) {
     inputLength += numbers;
   }
 
-  if(specialCharsConfirm === true) {
+  if (specialCharsConfirm === true) {
     inputLength += specialChars;
   }
-
-    return inputLength;
+  console.log("input length: ", inputLength)
+  return inputLength;
 
 }
 
 const generateBtn = document.querySelector("#generate");
 
 function writePassword() {
-  let password = generatePassword();
-  let passwordText = document.querySelector("#password");
+  const password = generatePassword();
+  const passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 }
