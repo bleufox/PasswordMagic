@@ -17,6 +17,7 @@ This application will generate a random password based criteria specified by the
 ## Screenshot
 ![Screenshot](images/password-screenshot1.png)
 ![Screenshot](images/password-screenshot2.png)
+![Screenshot](images/password-screenshot3.png)
 
 ## Links
 * [Password Magic Password Generator](https://bleufox.github.io/PasswordMagic/)
